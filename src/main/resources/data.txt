@@ -1,0 +1,407 @@
+ID,ItemName,Catid,Rate,ItemCode
+1,"spaoSala caha",1,20,1
+2,"naosa ka^fI",1,20,2
+3,"masaalaa duQa",1,22,3
+4,"dala f`aya",2,80,4
+5,"dala taDka",2,90,5
+6,"baTr dala f`aya",2,100,6
+7,canaamasaalaa,2,100,7
+8,AalaumaTr,2,100,8
+9,"gaaobaI masaalaa",2,100,9
+10,"BaoMDI masaalaa",2,100,10
+11,"BaoMDI f`aya",2,110,11
+12,"dma Aalau paMjaabaI",2,130,12
+13,"Aalau paalak",2,100,13
+14,"maTr paalak",2,100,14
+15,"lasauNaI paalak",2,100,15
+16,"ima@sa vhoja",2,100,16
+17,"vhoja makanavaalaa",2,120,17
+18,raoTI,3,12,18
+19,"vhoja caTpaTa",2,130,19
+20,"baTr raoTI",3,15,20
+21,"ima@sa raoTI",3,20,21
+22,"saaQaa naana",3,20,22
+23,"baTr naana",3,25,23
+24,"k iSmarI naana",3,35,24
+25,"lacCa naana",3,35,25
+26,"AalaU paraoza",3,40,26
+27,"maoqaI paraoza",3,40,27
+28,"lacCa paraoza",3,40,28
+29,"panaIr paraoza",3,40,29
+30,"gaaobaI paraoza",3,40,30
+31,"icaja kulCa",3,40,31
+32,"panaIr kulCa",3,40,32
+33,"masaalaa kulCa",3,40,33
+34,"panaIr BaujaI-",4,150,34
+35,"panaIr baTr masaalaa",4,140,35
+36,"panaIr TIka masaalaa",4,150,36
+37,"panaIr masaalaa",4,130,37
+38,"panaIr hMDI",4,150,38
+39,"panaIr kZI",4,150,39
+40,"panaIr kajaU masaalaa",4,150,40
+41,"paalak panaIr",4,120,41
+42,"baTr panaIr",4,140,42
+43,"maTr panaIr paulaava",5,120,43
+44,"vhoja kaolhapaurI",2,110,44
+45,"vhoja hMDI",2,120,45
+46,"vhoja kZa[-",2,120,46
+47,"vhoja Baunaa",2,120,47
+48,"vhoja maraza",2,120,48
+49,"lasauNa maoqaI",2,110,49
+50,"AalaU maoqaI",2,110,50
+51,"maoqaI  maTr malaa[-",2,130,51
+52,"AalaU ijara",2,100,52
+53,"Taoma^Tao caTnaI",2,100,53
+54,"baOMgana Bartaa",2,120,54
+55,"baOMgana masaalaa",2,100,55
+56,"AalaU Bartaa",2,120,56
+57,paIzlaa,2,90,57
+58,"vhoja ibayaa-NaI",5,120,58
+59,"Saova BaajaI",2,80,59
+60,"saaoyaabaIna masaalaa",2,80,60
+61,"maTkI f`aya",2,75,61
+62,"maTkI masaalaa",2,80,62
+63,"malaa[- kao@taa",6,140,63
+64,"kajau krI",6,130,64
+65,"vhoja SaahI panaIr",6,140,65
+66,"panaIr maKKanavaalaa",6,150,66
+67,"dma AalaU kaiSmarI",6,150,67
+68,"panaIr caIja kao@taa",6,150,68
+69,"panaIr kao@taa",6,150,69
+70,"maSar]ma masaalaa",6,120,70
+71,"ga`Ina sa^laoD",7,50,71
+72,"Taoma^Tao sa^laoD",7,30,72
+73,"kakDI sa^laoD",7,40,73
+74,"ima@sa vhoijaTobala rayataa",7,50,74
+75,"Aalau rayataa",7,50,75
+76,"raosToD paapaD",7,15,76
+77,"f`aya paapaD",7,20,77
+78,"masaalaa paapaD",7,25,78
+79,"plaona ra[-sa haf",5,50,79
+80,"plaona ra[-sa fula",5,80,80
+81,"ijara ra[-sa haf",5,60,81
+82,"ijara ra[-sa fula",5,90,82
+83,"spaoSala qaalaI",8,180,83
+84,"paMjaabaI qaalaI",8,160,84
+85,"[DlaI saaMbar",9,50,85
+86,"[DlaI f`aya",9,55,86
+87,"dhI [DlaI",9,60,87
+88,"vaDa saaMbar",9,50,88
+89,"dhI vaDa",9,60,89
+90,"saaQaa Zaosaa",9,50,90
+91,"masaalaa Daosaa",9,60,91
+92,"paopar Daosaa",9,70,92
+93,"paopar masaalaa Daosaa",9,80,93
+94,"icaja Daosaa",9,80,94
+95,"plaona {tappaa",9,50,95
+96,"AaonaIyana {tappaa",9,60,96
+97,"Taoma^Tao {tappaa",9,50,97
+98,"masalaa {tappaa",9,60,98
+99,"vhoja nauDlsa",10,100,99
+100,"h@ka nauDlsa",10,100,100
+101,"caIlaI gaarlaIk  nauDlsa",10,100,101
+102,"isaMgaapaur nauDlsa",10,100,102
+103,"vhoja f`aya ra[-sa",11,120,103
+104,"icalaI gaaila-k  ra[-sa",11,120,104
+105,"isaMgaapaurI ra[-sa",11,120,105
+106,"h@ka f`aya ra[-sa",11,120,106
+107,"icallaI paopar baobaI ka^na-",12,90,107
+108,"gaaolDna f`aya maSar]ma",12,110,108
+109,"hnaI paaoT^Tao",12,90,109
+110,"vhoja saa^lD paopasa-",12,90,110
+111,"icalaI panaIr",12,150,111
+112,"icalaI maSar]ma",12,130,112
+113,"gaaobaI [na ha^T gaaila-k  saa^sa",12,130,113
+114,"vhoja maMcauiryana",12,120,114
+115,"saaoyaabaIna icallaI",12,100,115
+116,"saaoyaabaIna icallaI D/aya",13,100,116
+117,"vhoja maMcauiryana  D/aya",13,120,117
+118,"icallaI panaIr D/aya",13,150,118
+119,"icallaI paaoT^Tao",13,120,119
+120,"vhoja ispa`Mga raola",13,130,120
+121,"vhoja maaomaao (8 naga)",13,150,121
+122,"ifMgar icapsa",14,80,122
+123,"vhoja saupa",15,50,123
+124,"vhoja manacaa{]  saupa",15,60,124
+125,"isvaT ka^na- vhoja saupa",15,60,125
+126,"ha^Tonasar saupa",15,50,126
+127,"vhoja laomana ka^rnaoDr saupa",15,50,127
+128,"ik`ma Taoma^Tao saupa",15,60,128
+129,"Aa[-sk`Ima kpa 8",16,8,129
+130,"Aa[-sk`Ima kpa 10",16,10,130
+131,"Aa[-sk`Ima kpa 15",16,15,131
+132,"Aa[-sk`Ima kpa 20",16,20,132
+133,"Aa[-sk`Ima kaona",16,30,133
+134,"Aa[-sk`Ima ksaaTa",16,30,134
+135,"Aa[-sk`Ima ksaaT 35",16,35,135
+136,"Aa[-sk`Ima f^imalaI pa^k",16,70,136
+137,"Aa[-sk`Ima f^imalaI pa^k 80",16,80,137
+138,caaokaobaar,16,10,138
+139,"caaokaobaar 15",16,15,139
+140,"caaokaobaar  20",16,20,140
+141,"paopsaI 200 ema ela",17,20,141
+142,"paopsaI 500 ema ela",17,50,142
+143,"paopsaI 1 ila.",17,70,143
+144,"maaJaa 200 ema ela",17,20,144
+145,"maaJaa 500 ema ela",17,50,145
+146,"maaJaa 1 ila.",17,70,146
+147,"ilamaka 200 ema ela",17,20,147
+148,"ilamaka 500 ema el",17,50,148
+149,"ilamaka 1 ila.",17,70,149
+150,"qaMmasaApa 200 ema ela",17,20,150
+151,"qaMmasaApa 500 ema ela",17,50,151
+152,"qaMmasaApa 1 ila.",17,70,152
+153,"imarIDMa 200 ema ela",17,20,153
+154,"imarIDMa 500 ema ela",17,50,154
+155,"imarIDMa 1 ila.",17,70,155
+156,"fMTa 200 ema ela",17,20,156
+157,"fMTa 500 ema ela",17,50,157
+158,"fMTa  1 ila.",17,70,158
+159,"7 Apa 200 ema ela",17,20,159
+160,"7 Apa 500 ema ela",17,50,160
+161,"7 Apa 1 ila.",17,70,161
+162,"slaa[-sa 200 ema ela",17,20,162
+163,"slaa[-sa 500 ema ela",17,50,163
+164,"slaa[-sa 1 ila.",17,70,164
+165,"inabausa 350 ema ela",17,20,165
+166,"inabausa 500 ema ela",17,50,166
+167,"inabausa 1 ila.",17,60,167
+168,"spa`a[-T 200 ema ela",17,20,168
+169,"spa`a[-T 500 ema ela",17,50,169
+170,"spa`a[-T  1 ila.",17,70,170
+171,"saaoDa 200 ema ela",17,20,171
+172,"saaoDa 500 ema ela",17,50,172
+173,"saaoDa  1 ila.",17,70,173
+174,"fRTI 200 ema ela",17,20,174
+175,"fRTI 500 ema ela",17,50,175
+176,"fRTI  1 ila.",17,70,176
+177,"caknaa 5",18,5,177
+178,"caknaa 10",18,10,178
+179,"ibaskIT 6",18,6,179
+180,"ibaskIT 10",18,10,180
+181,"ibaskIT 20",18,20,181
+182,"ibaskIT 25",18,25,182
+183,"imainarla vaa^Tr 1 ila.",17,15,183
+184,"imainarla vaa^Tr 2 ila.",17,30,184
+185,caha,1,5,185
+186,xzocaa,7,80,186
+187,"saIgaroT 5",18,5,187
+188,"saIgaroT 7",18,7,188
+189,"saIgaroT 10",18,10,189
+190,"ibaskIT 5",18,5,190
+191,capaataI,3,12,191
+192,"ga`Ina paI masaalaa",2,120,192
+193,"maTr panaIr masaalaa",4,140,193
+194,"  maa   qaalaI",8,150,194
+195,"dala ra[-sa fula",5,100,195
+196,"dala ra[-sa haf",5,70,196
+197,"maSar]ma masaalaa",2,120,197
+198,gaIriva,2,70,198
+199,dhI,7,30,199
+200,"masaalaa ra[-sa",5,120,200
+201," dala KaIcaaDI",5,120,201
+202,Caja,1,25,202
+203,duQa,1,10,203
+204,"Saova Taoma^Ta",2,110,204
+205,"saaoyaabaIna f`aya",13,100,205
+206,"vhoja paulaava",5,120,206
+207,"masaalaa ra[-sa haf",5,80,207
+208,"f`aya nauDlsa",10,70,208
+209,"canaa f`aya",13,80,209
+210,paaoHa,1,30,210
+211,"vhoja hMDI 1",19,100,211
+212," vhoja hMDI 2",19,150,212
+213," gaaobaI  f`aya",13,60,213
+214,SaIra,13,50,214
+215,panaIr,20,0,215
+216,"ra[-sa kTa",20,0,216
+217,"ga^sa maaoTI",21,0,217
+218,sarpana,21,0,218
+219,"ga^sa laahana",21,0,219
+220,"  ga`Ina paIsa",20,0,220
+221,"TosTIMga paavaDr",20,0,221
+222,paaoho,20,0,222
+223,"imarcaI paavaDr",20,0,223
+224,"oikcana ik-ga",20,0,224
+225,"AaKaa Ganaa",20,0,225
+226,dhI,20,0,226
+227,"Saova paakIT",20,0,227
+228,"vhoja  qaalaI",8,150,228
+229,taola,20,0,229
+230,taupa,20,0,230
+231,"xx TIma  ra[-sa",5,90,231
+232," plaona  paalak",2,100,232
+233,"taMdur AaTa",20,0,233
+234,kajau,20,0,234
+235,saaoyaabaIna,20,0,235
+236,"ijara saaoDa 200",17,20,236
+237,"haf  nauDlsa",10,70,237
+238,"vhoja icallaI",13,90,238
+239,paUrI,8,25,239
+240,"kD ra[-sa",5,120,240
+241,"baTr paraoza",3,35,241
+242," plaona  paraoza",3,30,242
+243,"kajau  masaalaa",6,130,243
+244," baTr  capaataI",3,15,244
+245,"lasauNaI f`aya",13,80,245
+246,"gaaobaI maMcauiryana",13,100,246
+247,"ibaskIT 30",18,30,247
+248,"a`Ina paIsa  f`aya",13,100,248
+249,"vhoja hMDI fula 1",19,200,249
+250,"imainarla vaa^Tr 1 ila. 2",17,20,250
+251,"panaIr pakaoDa",13,150,251
+252,"gaIriva haf",2,45,252
+253,"maoqaI masaalaa",2,100,253
+254,"panaIr caTpaTa",4,150,254
+255,"saabaudanaa KaIcaaDI",14,50,255
+256,"saabaudanaa vaDa",14,40,256
+257,"kajau f`aya",13,150,257
+258,Baakr,3,20,258
+259,Taoma^Tao,22,0,259
+260,isamalaa,22,0,260
+261,gaajar,22,0,261
+262,fulagaaobaI,22,0,262
+263,pa<aakaobaI,22,0,263
+264,ilaMbau,22,0,264
+265,imarcaI,22,0,265
+266,kakDI,22,0,266
+267,Aad`k,22,0,267
+268,lasauna,22,0,268
+269,baTaTo,22,0,269
+270,Gainayaa,22,0,270
+271,paalak,22,0,271
+272,maoqaI,22,0,272
+273,pauidnaa,22,0,273
+274,BaoMDI,22,0,274
+275,kZIpa<aa,22,0,275
+276,kaMda,22,0,276
+277,GaovaDa,22,0,277
+278,Saovagaa,22,0,278
+279,maTkI,22,0,279
+280,DaMgar,22,0,280
+281,vaagao,22,0,281
+282,"plaona saaoDa",17,20,282
+283,qaMDr,17,20,283
+284,maOda,20,0,284
+285,"kaMda pakaoDa",1,35,285
+286,"AMjanaI spaoSala",6,160,286
+287,"saMDo 25",16,25,287
+288,"saMDo 35",16,35,288
+289,kulfI,16,20,289
+290,havarI,20,0,290
+291,magaja,20,0,291
+292,KasaKasa,20,0,292
+293,"kajau kina",20,0,293
+294,fuTanaa,20,0,294
+295,SaoMgadaNao,20,0,295
+296,"hldI paavaDr",20,0,296
+297,"Taoma^Tao saOasa",20,0,297
+298,ibainagar,20,0,298
+299,"ga`Ina icallI",20,0,299
+300,"saaoyaa saaOsa",20,0,300
+301,baTr,20,0,301
+302,ik`ma,20,0,302
+303,"Saaha ijara",20,0,303
+304,paapaD,20,0,304
+305,"Kaaobara iksa",20,0,305
+306,"Kaaobara gaaoTa",20,0,306
+307,nauDlsa,20,0,307
+308,"taDka imacaI-",20,0,308
+309,"[-laayacaI maaoTI",20,0,309
+310,lavaMga,20,0,310
+311,"KaDa masaalaa",20,0,311
+312,"gaaolD flyak  CaoTI",23,10,312
+313,"gaaolD flyak  maaozI",23,15,313
+314,"canaa dala",20,0,314
+315,"mauga dala",20,0,315
+316,"{DId dala",20,0,316
+317,saaKar,20,0,317
+318,"{DDNa garma",23,15,318
+319,vhIlsa,23,10,319
+320,"gaaolD flyak  laa[-T",23,15,320
+321,baDISaof,20,0,321
+322,KaDIsaaKar,20,0,322
+323,k^irba^ga,20,0,323
+324,"BaajaI paasa-la",20,0,324
+325,"paaNaI glaasa",20,0,325
+326,"cahacao glaasa",20,0,326
+327,"ka^fI glaasa",20,0,327
+328,"klaaisak  maa[-D",23,15,328
+329,"klaaisak  maonaqaa^la",23,20,329
+330,bla^k,23,15,330
+331,iba`sTa^la,23,7,331
+332,"maTna masaalaa",20,0,332
+333,namak,20,0,333
+334,maaohrI,20,0,334
+335,"klar Aa^roMja",20,0,335
+336,AgarbattaI,20,0,336
+337,cahapattaI,20,0,337
+338,"isalvhr raola",20,0,338
+339,"kaDIsa paoTI baa^ksa",20,0,339
+340,naarL,20,0,340
+341,DayarI,20,0,341
+342,"bla^k paopar",20,0,342
+343,"vha[-T paopar",20,0,343
+344,"Aacaar barNaI",20,0,344
+345,"kna flaavar",20,0,345
+346,baosana,20,0,346
+347,"maSar}ma Dbaa",20,0,347
+348,maTkI,20,0,348
+349,"kabaaolaI canaa",20,0,349
+350,"paopar na^paikna",20,0,350
+351,ihMgaDbaI,20,0,351
+352,jaayapa~aI,20,0,352
+353,sTarfula,20,0,353
+354,"kalaI imarI",20,0,354
+355,"[-laayacaI maaoTI",20,0,355
+356,dalaicanaI,20,0,356
+357,"Aa[-sk`Ima kpa  25",16,25,357
+358,ka^fI,20,0,358
+359,"taur daL",20,0,359
+360,"vhoja hMDI fula 2",19,250,360
+361,"vhoja hMDI fula 3",19,300,361
+362,lassaI,16,15,362
+363,"saaoyaabaIna ra[-sa",5,130,363
+364,"SaahI panaIr",4,140,364
+365,"paRrI BaajI",1,50,365
+366,paRrI,1,25,366
+367,"maMcauiryana ra[-sa",11,150,367
+368,JaIrk,2,80,368
+369," dala KaIcaaDI  haf",5,70,369
+370,"vaDa paava",1,20,370
+371,"dala vaaTI",2,45,371
+372,"imarcaI ploaT",18,20,372
+373,"canaa raosT",13,80,373
+374,baTr,1,30,374
+389,hamaalaI,20,0,389
+390,"saaoyaabaIna raosT",13,90,390
+391,"Taoma^Ta  ra[-sa",11,140,391
+392,"caknaa 15",18,15,392
+393,"spoSala caha maaoza",1,25,393
+394,"saaoyabaIna caapa faya",24,80,394
+395,"saaoyabaIna caapa masaala",24,130,395
+396,"panaIr pasaMda",24,130,396
+397,"vhoja taufanaI",24,140,397
+398,"panaIr taufanaI",24,150,398
+399,"maSar}ma taufanaI",24,150,399
+400,"vhoja itarMgaa",24,140,400
+401,"Aalau gaaobaI Qainayaa",24,90,401
+402,"vhoja TkaTk",24,130,402
+403,"hrIyaalaI panaIr iTka",24,130,403
+404,"panaIr paTIyaalaa",24,120,404
+405,"panaIr labbaoda",24,130,405
+406,"vhoja navartnaa Kaurmaa",24,100,406
+407,"panaIr hrIyaalaI",24,150,407
+408,"vhoja paTIyaalaa",24,150,408
+409,"icakna kbaaba",19,220,409
+410,"panaIr rajavaaDI",4,180,410
+411,"kajaU iSaMgaapaurI",6,170,411
+412,"panaIr ibayaa-naI",5,140,412
+413,"panaIr idlar]baa",4,150,413
+414,"panaIr maharajaa",4,190,414
+415,"vhoja kbaaba",13,140,415
+416,"tavaa panaIr",4,150,416
+417,"Aad`kI panaIr",4,150,417
+418,"panaIr iT@ka",13,150,418
+419,"maSar]ma iT@ka",13,150,419
+420,glaasa,19,4,420
