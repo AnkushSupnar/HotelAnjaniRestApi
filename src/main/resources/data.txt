@@ -1,4 +1,3 @@
-ID,ItemName,Catid,Rate,ItemCode
 1,"spaoSala caha",1,20,1
 2,"naosa ka^fI",1,20,2
 3,"masaalaa duQa",1,22,3

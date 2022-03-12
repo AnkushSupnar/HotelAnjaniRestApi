@@ -16,6 +16,7 @@ public class CategoryService {
             repository.save(category);
             return category;
     }
+    public List<Category>getAllCategory(){return repository.findAll();}
     public List<String> getAllCategoryNames(){
         return repository.findAllCategoryNames();
     }
@@ -24,5 +25,9 @@ public class CategoryService {
     }
     public Category getById(Long id){
         return repository.findById(id).orElse(null);
+       // return repository.getById(id);
+    }
+    public Category getByName(String name){
+    return repository.getByCategory(name);
     }
 }
