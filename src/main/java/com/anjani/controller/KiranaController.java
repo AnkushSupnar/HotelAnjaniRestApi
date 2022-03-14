@@ -29,6 +29,7 @@ public class KiranaController {
     public ResponseEntity<List<Kirana>>getByPartyName(@PathVariable("name") String party){
         return new ResponseEntity<List<Kirana>>(service.getByPartyName(party),HttpStatus.OK);
     }
+    @GetMapping("/unpaid")
     public ResponseEntity<List<Kirana>>getAllUnpaid(){
         return new ResponseEntity<List<Kirana>>(service.getAllUnpaid(),HttpStatus.OK);
     }
@@ -38,6 +39,8 @@ public class KiranaController {
     }
     @PostMapping("/save")
     public ResponseEntity<Kirana> save(@RequestBody Kirana kirana){
+       // System.out.println(kirana);
+       // return new ResponseEntity<>(kirana,HttpStatus.OK);
         return new ResponseEntity<Kirana>(service.save(kirana),HttpStatus.OK);
     }
 }

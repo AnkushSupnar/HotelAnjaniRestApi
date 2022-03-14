@@ -1,12 +1,8 @@
 package com.anjani.entity;
 
-import javax.annotation.processing.Generated;
 import javax.persistence.*;
 
-import org.hibernate.annotations.CollectionId;
-
 import lombok.*;
-import net.bytebuddy.utility.dispatcher.JavaDispatcher.IsConstructor;
 
 @Entity
 @Table(name="purchaseparty")
