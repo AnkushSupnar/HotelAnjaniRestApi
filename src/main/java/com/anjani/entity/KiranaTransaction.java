@@ -1,8 +1,6 @@
 package com.anjani.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 
 import javax.persistence.*;
@@ -41,34 +39,4 @@ public class KiranaTransaction {
 
     @Column(name = "amount")
     private Float amount;
-/*
-    public Long getId() {
-        return id;
-    }
-
-    @JsonBackReference
-    public Kirana getKirana() {
-        return kirana;
-    }
-
-    public String getItemname() {
-        return itemname;
-    }
-
-    public String getUnit() {
-        return unit;
-    }
-
-    public Float getQuantity() {
-        return quantity;
-    }
-
-    public Float getRate() {
-        return rate;
-    }
-
-    public Float getAmount() {
-        return amount;
-    }
-*/
 }
