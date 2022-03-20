@@ -37,13 +37,12 @@ public class CategoryController {
     public ResponseEntity<Category>getByName(@PathVariable("name")String name){
         return new ResponseEntity<Category>(service.getByName(name), HttpStatus.OK);
     }
-    //@GetMapping
+   // @GetMapping
     public ResponseEntity<List<Category>>saveAll(){
         List<Category>catList = new ArrayList<>();
        // FileReader fileReader = new FileReader("src/main/resources/data.txt");
-        File file = new File("src/main/resources/data.txt");
-        BufferedReader br
-                = null;
+        File file = new File("src/main/resources/cat.txt");
+        BufferedReader br = null;
         try {
             br = new BufferedReader(new FileReader(file));
             String st;

@@ -1,12 +1,16 @@
 package com.anjani.controller;
 
+import com.anjani.entity.Category;
 import com.anjani.entity.Item;
+import com.anjani.service.CategoryService;
 import com.anjani.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -14,10 +18,46 @@ import java.util.List;
 public class ItemController {
     @Autowired
     private ItemService service;
+    @Autowired
+    private CategoryService categoryService;
     public ItemController(ItemService service)
     {
         this.service = service;
     }
+   // @GetMapping
+    public ResponseEntity<List<Item>>saveAll(){
+        List<Item>itemList = new ArrayList<>();
+        // FileReader fileReader = new FileReader("src/main/resources/data.txt");
+        File file = new File("src/main/resources/data.txt");
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new FileReader(file));
+            String st;
+            while ((st = br.readLine()) != null)
+            {
+                String[] arr = st.split(",");
+                System.out.println(arr[0]);
+                itemList.add(
+                        Item.builder()
+                                .id(Long.parseLong(arr[0]))
+                                .itemname(arr[1])
+                                .catid(categoryService.getById(Long.parseLong(arr[2])))
+                                .rate(Float.parseFloat(arr[3]))
+                                .itemcode(Integer.parseInt(arr[4]))
+                                .build()
+                );
+
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return new ResponseEntity<List<Item>>(service.saveAll(itemList),HttpStatus.FOUND);
+
+    }
+
     @GetMapping("/byid/{id}")
     public ResponseEntity<Item>getById(@PathVariable("id")Long id){
         return new ResponseEntity<Item>(service.getById(id),HttpStatus.FOUND);

@@ -2,13 +2,17 @@ package com.anjani.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
+
 import java.util.List;
 
 @Entity
@@ -25,8 +29,10 @@ public class Kirana {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @JsonSerialize(using = LocalDateSerializer.class)
-    @JsonFormat(pattern="yyyy-MM-dd")
+
+    //@JsonSerialize(using = LocalDateSerializer.class)
+   // @JsonDeserialize(using = LocalDateDeserializer.class)
+   // @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss",shape = JsonFormat.Shape.STRING)
     @Column(name = "date")
     private LocalDate date;
 
@@ -60,5 +66,6 @@ public class Kirana {
     @ManyToOne
     @JoinColumn(name = "bank")
     private Bank bank;
+
 
 }

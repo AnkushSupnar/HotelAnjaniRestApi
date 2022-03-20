@@ -1,6 +1,7 @@
 package com.anjani.controller;
 
 import com.anjani.entity.Login;
+import com.anjani.service.EmployeeService;
 import com.anjani.service.LoginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,7 +12,8 @@ import java.util.List;
 @RequestMapping("/login")
 public class LoginController {
     @Autowired private LoginService service;
-
+    @Autowired
+    EmployeeService empService;
     @PostMapping("/save")
     public ResponseEntity<Login>saveLogin(@RequestBody Login login){
         service.saveLogin(login);
@@ -19,6 +21,7 @@ public class LoginController {
     }
     @GetMapping
     public ResponseEntity<List<Login>>getAllLogin(){
+
         return new ResponseEntity<List<Login>>(service.getAllLogin(),HttpStatus.FOUND);
     }
     @GetMapping("/validate")
