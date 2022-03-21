@@ -16,10 +16,11 @@ import java.util.List;
 @RestController
 @RequestMapping("/item")
 public class ItemController {
-    @Autowired
+    //@Autowired
     private ItemService service;
     @Autowired
     private CategoryService categoryService;
+    @Autowired
     public ItemController(ItemService service)
     {
         this.service = service;
