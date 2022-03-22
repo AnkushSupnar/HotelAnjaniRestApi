@@ -21,8 +21,11 @@ public class TableMasterService {
     public TableMaster getById(Integer id){
         return repository.findById(id).orElse(null);
     }
-    public TableMaster getByName(String name){
+    public List<TableMaster> getByName(String name){
         return repository.findByTablename(name);
+    }
+    public TableMaster getByTableNameAndGroupName(String tableName,String groupName){
+        return repository.findByTablenameAndTableGroup_Groupname(tableName,groupName).orElse(null);
     }
     public List<String> getAllNames(){
         return repository.getAllTableNames();

@@ -31,7 +31,7 @@ public class TableMasterController {
         return new ResponseEntity<>(service.getById(id),HttpStatus.OK);
     }
     @GetMapping("/byname/{name}")
-    public ResponseEntity<TableMaster>getByName(@PathVariable("name")String name){
+    public ResponseEntity<List<TableMaster>>getByName(@PathVariable("name")String name){
         log.info("Table Master getByName({})=",name,service.getByName(name));
         return new ResponseEntity<>(service.getByName(name),HttpStatus.OK);
     }
@@ -39,6 +39,14 @@ public class TableMasterController {
     public ResponseEntity<List<String>> getAllNames(){
         log.info("Table Master getAllNames={}",service.getAllNames());
         return new ResponseEntity<>(service.getAllNames(),HttpStatus.OK);
+    }
+    @GetMapping("/bytablenamegroupname/{tablename}/{groupname}")
+    public ResponseEntity<TableMaster>getByTableNameAndGroupName(@PathVariable("tablename") String tableName,@PathVariable("groupname") String groupName){
+        TableMaster table = service.getByTableNameAndGroupName(tableName,groupName);
+        if(table==null)
+            return new ResponseEntity<>(HttpStatus.valueOf(200));
+        else
+        return new ResponseEntity<>(table,HttpStatus.OK);
     }
     @PostMapping("/save")
     public ResponseEntity<TableMaster> save(@RequestBody TableMaster tableMaster){
