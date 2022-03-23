@@ -30,6 +30,9 @@ public class TableMasterService {
     public List<String> getAllNames(){
         return repository.getAllTableNames();
     }
+    public List<TableMaster>getByGroupName(String groupname){
+        return repository.findByTableGroup_GroupnameOrderByIdAsc(groupname);
+    }
     public TableMaster save(TableMaster tableMaster){
         return repository.save(tableMaster);
     }

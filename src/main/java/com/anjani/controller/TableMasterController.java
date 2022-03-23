@@ -48,6 +48,10 @@ public class TableMasterController {
         else
         return new ResponseEntity<>(table,HttpStatus.OK);
     }
+    @GetMapping("/bygroup/{group}")
+    public ResponseEntity<List<TableMaster>>getByGroupName(@PathVariable("group")String group){
+        return new ResponseEntity<>(service.getByGroupName(group),HttpStatus.OK);
+    }
     @PostMapping("/save")
     public ResponseEntity<TableMaster> save(@RequestBody TableMaster tableMaster){
         log.info("Table Master Save=");

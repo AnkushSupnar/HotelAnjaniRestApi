@@ -17,6 +17,12 @@ public interface TableMasterRepository extends JpaRepository<TableMaster, Intege
 
     Optional<TableMaster> findByTablenameAndTableGroup_Groupname(String tablename, String groupname);
 
+    List<TableMaster> findByTableGroup_GroupnameOrderByTablenameAsc(String groupname);
+
+    List<TableMaster> findByTableGroup_GroupnameOrderByIdAsc(String groupname);
+
+
+
     //TableMaster findByTablenameAndTableGroup_Groupname(String tablename, String groupname);
 
 
