@@ -88,5 +88,9 @@ public class ItemController {
         service.getItemNamesByCategoryName(name).stream().forEach(System.out::println);
         return new ResponseEntity<List<String>>(service.getItemNamesByCategoryName(name),HttpStatus.OK);
     }
+    @GetMapping("/bycode/{code}")
+    public ResponseEntity<Item>getBycode(@PathVariable("code")Integer code){
+        return new ResponseEntity<Item>(service.getByCode(code),HttpStatus.OK);
+    }
 
 }

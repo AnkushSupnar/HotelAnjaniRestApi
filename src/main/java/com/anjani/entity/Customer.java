@@ -5,14 +5,14 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "employee")
+@Table(name = "customer")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @ToString
 @Builder
-public class Employee {
+public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
@@ -21,25 +21,13 @@ public class Employee {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "nickname")
-    private String nickname;
-
     @Column(name = "address")
     private String address;
 
     @Column(name = "contact")
     private String contact;
 
-    @Column(name = "designation")
-    private String designation;
-
-    @Column(name = "salary")
-    private Float salary;
-
-    @Column(name = "salarytype")
-    private String salarytype;
-
-    @Column(name = "status")
-    private String status;
+    @Column(name = "mobile")
+    private String mobile;
 
 }

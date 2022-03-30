@@ -20,6 +20,9 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
     @Query("select i.itemname from Item i where i.catid.category = ?1")
     List<String> findItemNameByCategoryName(String category);
 
+    Item findByItemcode(Integer itemcode);
+
+
 
 
 

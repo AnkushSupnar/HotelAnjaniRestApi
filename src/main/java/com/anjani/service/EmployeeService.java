@@ -28,5 +28,14 @@ public class EmployeeService {
         repository.saveAll(list);
         return list;
     }
+    public List<String>getEmployeeNamesByDesignation(String designation){
+        return repository.findNamesByDesignation(designation);
+    }
+    public List<String>getEmployeeNicknamesByDesignation(String designation){
+        return repository.findNicknamesByDesignation(designation);
+    }
+    public Employee getByName(String name){
+        return repository.findByName(name);
+    }
 
 }

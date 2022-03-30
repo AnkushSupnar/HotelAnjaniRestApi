@@ -23,5 +23,7 @@ public class ItemService {
     public List<String>getItemNamesByCategoryName(String name){
         return repository.findItemNameByCategoryName(name);
     }
-
+    public Item getByCode(Integer code){
+        return repository.findByItemcode(code);
+    }
 }
