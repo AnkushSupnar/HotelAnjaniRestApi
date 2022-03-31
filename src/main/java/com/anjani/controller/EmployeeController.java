@@ -38,6 +38,10 @@ public class EmployeeController {
     public ResponseEntity<Employee>getByName(@PathVariable("name")String name){
         return new ResponseEntity<>(employeeService.getByName(name),HttpStatus.OK);
     }
+    @GetMapping("/bynickname/{name}")
+    public ResponseEntity<Employee>getBynickname(@PathVariable("name")String name){
+        return new ResponseEntity<>(employeeService.getByNickName(name),HttpStatus.OK);
+    }
 
 
 }

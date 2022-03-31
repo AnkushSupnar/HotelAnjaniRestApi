@@ -13,13 +13,14 @@ public interface TableMasterRepository extends JpaRepository<TableMaster, Intege
     @Query("select tablename from TableMaster")
     List<String>getAllTableNames();
 
-    List<TableMaster> findByTablename(String tablename);
+    TableMaster findByTablename(String tablename);
 
     Optional<TableMaster> findByTablenameAndTableGroup_Groupname(String tablename, String groupname);
 
     List<TableMaster> findByTableGroup_GroupnameOrderByTablenameAsc(String groupname);
 
     List<TableMaster> findByTableGroup_GroupnameOrderByIdAsc(String groupname);
+
 
 
 

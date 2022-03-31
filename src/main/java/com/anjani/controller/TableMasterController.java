@@ -31,7 +31,7 @@ public class TableMasterController {
         return new ResponseEntity<>(service.getById(id),HttpStatus.OK);
     }
     @GetMapping("/byname/{name}")
-    public ResponseEntity<List<TableMaster>>getByName(@PathVariable("name")String name){
+    public ResponseEntity <TableMaster>getByName(@PathVariable("name")String name){
         log.info("Table Master getByName({})=",name,service.getByName(name));
         return new ResponseEntity<>(service.getByName(name),HttpStatus.OK);
     }

@@ -1,5 +1,7 @@
 package com.anjani.service;
 
+import com.anjani.entity.Item;
+import com.anjani.entity.TableMaster;
 import com.anjani.entity.TempTransaction;
 import com.anjani.repository.TempTransactionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,12 +26,21 @@ public class TempTransactionService {
     public List<TempTransaction>getByTableId(Integer tableid){
         return repository.findByTableMaster_Id(tableid);
     }
+    public TempTransaction getByItemAndTable(Item item,TableMaster tableMaster){
+        return repository.findByItemAndTableMaster(item,tableMaster);
+    }
+    public TempTransaction getByItemAndRateAndTable(Item item,TableMaster tableMaster,Float rate){
+       // System.out.println("In Service= >"+repository.findByItemAndTableMasterAndRate(item,tableMaster,rate));
+        return repository.findByItemAndTableMasterAndRate(item,tableMaster,rate);
+    }
+
     public TempTransaction save(TempTransaction temp){
         return repository.save(temp);
     }
-
-    public Long deleteTempTransaction(Integer tableid){
-         return repository.deleteByTableMaster_Id(tableid);
-
+    public void deleteById(Long id){
+        repository.deleteById(id);
+    }
+    public List<TempTransaction>deleteByTableMaster(TableMaster tableMaster){
+        return repository.deleteByTableMaster(tableMaster);
     }
 }

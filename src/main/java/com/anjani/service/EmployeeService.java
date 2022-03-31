@@ -38,4 +38,7 @@ public class EmployeeService {
         return repository.findByName(name);
     }
 
+    public Employee getByNickName(String nickname){
+        return repository.findByNickname(nickname);
+    }
 }

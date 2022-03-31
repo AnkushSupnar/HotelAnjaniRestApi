@@ -25,6 +25,7 @@ public class TempTransaction {
     @Column(name = "quantity")
     private Float quantity;
 
+
     @Column(name = "amount")
     private Float amount;
 
@@ -35,5 +36,7 @@ public class TempTransaction {
     @Column(name = "printqty")
     private Float printqty;
 
+    @Column(name = "rate")
+    private Float rate;
 
 }

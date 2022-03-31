@@ -16,6 +16,8 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
     @Query("select e.nickname from Employee e where e.designation = ?1 and upper(e.status) = upper('Active')")
     List<String> findNicknamesByDesignation(String designation);
 
+    Employee findByNickname(String nickname);
+
 
     Employee findByName(String name);
 
