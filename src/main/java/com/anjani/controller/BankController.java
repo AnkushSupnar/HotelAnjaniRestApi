@@ -37,4 +37,8 @@ public class BankController {
     public ResponseEntity<Bank> save(@RequestBody Bank bank){
         return new ResponseEntity<Bank>(service.save(bank),HttpStatus.OK);
     }
+    @PutMapping("/addbalance/{id}/{balance}")
+    public ResponseEntity<Integer>addBankBalance(@PathVariable("id")Long id,@PathVariable("balance")Float balance){
+        return new ResponseEntity<>(service.addBankBalance(id,balance),HttpStatus.OK);
+    }
 }

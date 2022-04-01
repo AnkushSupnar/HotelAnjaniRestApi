@@ -29,5 +29,7 @@ public class BankService {
     public Bank save(Bank bank){
         return repository.save(bank);
     }
-
+    public Integer addBankBalance(Long id,Float bal){
+        return repository.addBankBalance(id,bal);
+    }
 }

@@ -69,5 +69,9 @@ public class TempTransactionController {
         service.deleteById(id);
     }
 
+    @GetMapping("/getopentable")
+    public ResponseEntity<List<TableMaster>>getOpenTable(){
+        return new ResponseEntity<>(service.getOpenTable(),HttpStatus.OK);
+    }
 
 }

@@ -39,4 +39,8 @@ public class TempTransaction {
     @Column(name = "rate")
     private Float rate;
 
+    @ManyToOne
+    @JoinColumn(name = "employeeid")
+    private Employee employee;
+
 }

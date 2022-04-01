@@ -43,4 +43,7 @@ public class TempTransactionService {
     public List<TempTransaction>deleteByTableMaster(TableMaster tableMaster){
         return repository.deleteByTableMaster(tableMaster);
     }
+    public List<TableMaster>getOpenTable(){
+        return repository.getOpenTable();
+    }
 }
