@@ -31,6 +31,10 @@ public class CustomerController {
     public ResponseEntity<Customer> getByMobile(@PathVariable("mobile") String mobile){
         return new ResponseEntity<>(service.getByMobile(mobile),HttpStatus.OK);
     }
+    @GetMapping("/byid/{id}")
+    public ResponseEntity<Customer> getById(@PathVariable("id") Long id){
+        return new ResponseEntity<>(service.getById(id),HttpStatus.OK);
+    }
     @GetMapping("/allnames")
     public ResponseEntity<List<String>>getAllNames(){
         return new ResponseEntity<>(service.getAllNames(),HttpStatus.OK);

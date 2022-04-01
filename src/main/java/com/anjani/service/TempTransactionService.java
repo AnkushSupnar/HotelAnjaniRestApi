@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import java.security.PublicKey;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class TempTransactionService {
@@ -18,22 +19,19 @@ public class TempTransactionService {
     public TempTransactionService(TempTransactionRepository repository) {
         this.repository = repository;
     }
-
     public List<TempTransaction>getAll(){
         return repository.findAll();
     }
-
     public List<TempTransaction>getByTableId(Integer tableid){
         return repository.findByTableMaster_Id(tableid);
     }
-    public TempTransaction getByItemAndTable(Item item,TableMaster tableMaster){
-        return repository.findByItemAndTableMaster(item,tableMaster);
+    public TempTransaction getByItemAndTable(String itemname,TableMaster tableMaster){
+        return repository.findByItemnameAndTableMaster(itemname,tableMaster);
     }
-    public TempTransaction getByItemAndRateAndTable(Item item,TableMaster tableMaster,Float rate){
+    public TempTransaction getByItemAndRateAndTable(String item,TableMaster tableMaster,Float rate){
        // System.out.println("In Service= >"+repository.findByItemAndTableMasterAndRate(item,tableMaster,rate));
-        return repository.findByItemAndTableMasterAndRate(item,tableMaster,rate);
+        return repository.findByItemnameAndTableMasterAndRate(item,tableMaster,rate);
     }
-
     public TempTransaction save(TempTransaction temp){
         return repository.save(temp);
     }
@@ -42,5 +40,15 @@ public class TempTransactionService {
     }
     public List<TempTransaction>deleteByTableMaster(TableMaster tableMaster){
         return repository.deleteByTableMaster(tableMaster);
+    }
+    public List<TableMaster>getOpenTable(){
+        return repository.getOpenTable();
+    }
+    public List<TempTransaction>getTableOrder(Integer tableid){
+        return getByTableId(tableid).stream().filter(t->t.getPrintqty()>0).collect(Collectors.toList());
+    }
+    public int setRemovePrintQuantity(Integer tableid){
+
+       return repository.updatePrintqtyByTableMaster_Id(0.0f,tableid);
     }
 }

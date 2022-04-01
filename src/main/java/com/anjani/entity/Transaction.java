@@ -1,23 +1,33 @@
 package com.anjani.entity;
+
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.*;
+
 import javax.persistence.*;
+
 @Entity
-@Table(name = "temptransaction")
+@Table(name = "transaction")
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
 @Getter
-@Builder
+@Setter
 @ToString
-public class TempTransaction {
+@Builder
+public class Transaction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name="itemname")
-    String itemname;
 
+    @ManyToOne
+    @JoinColumn(name = "bill")
+    @ToString.Exclude
+    @JsonBackReference
+    private Bill bill;
+
+    @Column(name = "itemname")
+    private String itemname;
 
     @Column(name = "quantity")
     private Float quantity;
@@ -25,20 +35,7 @@ public class TempTransaction {
     @Column(name = "rate")
     private Float rate;
 
+
     @Column(name = "amount")
     private Float amount;
-
-    @ManyToOne
-    @JoinColumn(name = "tablemasterid")
-    private TableMaster tableMaster;
-
-    @ManyToOne
-    @JoinColumn(name = "waitorid")
-    private Employee employee;
-
-    @Column(name = "printqty")
-    private Float printqty;
-
-
-
 }

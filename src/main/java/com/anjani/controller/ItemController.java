@@ -83,8 +83,9 @@ public class ItemController {
     public ResponseEntity<Item>saveItem(@RequestBody Item item){
         return new ResponseEntity<Item>(service.save(item),HttpStatus.OK);
     }
-    @GetMapping("/bycategoryname/{name}")
-    public ResponseEntity<List<String>>getBycategoryName(@PathVariable("name") String name){
+    @GetMapping("/bycategoryname")
+    public ResponseEntity<List<String>>getBycategoryName(@RequestParam("name") String name){
+        System.out.println("got Name"+name);
         service.getItemNamesByCategoryName(name).stream().forEach(System.out::println);
         return new ResponseEntity<List<String>>(service.getItemNamesByCategoryName(name),HttpStatus.OK);
     }
