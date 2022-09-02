@@ -41,4 +41,8 @@ public class TempTransaction {
 
 
 
+    @ManyToOne
+    @JoinColumn(name = "employeeid")
+    private Employee employee;
+
 }
