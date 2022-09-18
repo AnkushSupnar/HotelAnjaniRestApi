@@ -4,6 +4,9 @@ import com.anjani.entity.Bill;
 import com.anjani.entity.Transaction;
 import com.anjani.repository.BillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -49,6 +52,17 @@ public class BillService {
         saveBill(bill);
         return bill;
     }
+    List<Bill>findBillWithSorting(String field){
+        return repository.findAll(Sort.by(Sort.Direction.ASC,field));
+    }
+
+    public List<Bill> findBillWithPagination(int offset, int pageSize){
+        return repository.findByOrderByIdDesc(PageRequest.of(offset,pageSize));
+        //return repository.findAll(PageRequest.of(offset,pageSize));
+    }
+
+
+
 
 
 }

@@ -4,6 +4,7 @@ import com.anjani.entity.Bill;
 import com.anjani.service.BillService;
 import com.anjani.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +24,7 @@ public class BillController {
 
     @GetMapping("/bybillno/{billno}")
     public ResponseEntity<Bill> getByBillno(@PathVariable("billno") Long billno){
+        System.out.println("Got bill no"+billno);
         return new ResponseEntity<>(service.getByBillno(billno), HttpStatus.OK);
     }
     @GetMapping("/bydate/{date}")
@@ -56,5 +58,9 @@ public class BillController {
     @GetMapping("/bybilldeletetransaction/{billno}")
     public ResponseEntity<Bill>deleteBillTransaction(@PathVariable("billno")long billno){
         return new ResponseEntity<>(service.deleteBillTransactions(billno),HttpStatus.OK);
+    }
+    @GetMapping("/bybillpagination/{offset}/{pagesize}")
+    public ResponseEntity<List<Bill>>getBillWithPagination(@PathVariable("offset")int offset, @PathVariable("pagesize")int pageSize){
+    return new ResponseEntity<>(service.findBillWithPagination(offset,pageSize),HttpStatus.OK);
     }
 }

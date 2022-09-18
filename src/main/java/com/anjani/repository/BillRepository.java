@@ -1,6 +1,8 @@
 package com.anjani.repository;
 
 import com.anjani.entity.Bill;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -23,6 +25,15 @@ public interface BillRepository extends JpaRepository<Bill, Long> {
 
     @Query("select b from Bill b where b.table.id = ?1 and b.status = 'closed'")
     Optional<Bill> getClosedBillByTableid(Integer id);
+
+    List<Bill> findByOrderByIdDesc(Pageable pageable);
+
+
+
+
+
+
+
 
 
 }

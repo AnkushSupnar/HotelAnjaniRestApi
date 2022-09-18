@@ -38,7 +38,7 @@ public class TempTransactionController {
     @GetMapping("/byitemnameandtableid/{itemname}/{tableid}")
     public ResponseEntity<TempTransaction> getByItemAndTable(@PathVariable("itemname")String itemname,@PathVariable("tableid") Integer tableid){
         log.info("Got item {item} table {}",itemname,tableService.getById(tableid));
-        return new ResponseEntity<>(service.getByItemAndTable(itemname,tableService.getById(tableid)),HttpStatus.OK);
+        return new ResponseEntity<>(service.findByItemnameAndTableMaster_Id(itemname,tableid),HttpStatus.OK);
     }
     @GetMapping("/byitemidandtableidandrate/{itemname}/{tableid}/{rate}")
     public ResponseEntity<TempTransaction> getByItemAndTable(
@@ -47,7 +47,7 @@ public class TempTransactionController {
             @PathVariable("rate")Float rate){
         System.out.println(itemname+" "+tableid+" "+rate);
         //log.info("Got item {item} table {}",itemService.getById(itemid),tableService.getById(tableid));
-        return new ResponseEntity<>(service.getByItemAndRateAndTable (itemname,tableService.getById(tableid),rate),HttpStatus.OK);
+        return new ResponseEntity<>(service.getByItemAndRateAndTable (itemname,tableid,rate),HttpStatus.OK);
     }
 
 
@@ -66,7 +66,7 @@ public class TempTransactionController {
 
     @GetMapping("/getopentable")
     public ResponseEntity<List<TableMaster>>getOpenTable(){
-        return new ResponseEntity<>(service.getOpenTable(),HttpStatus.OK);
+        return new ResponseEntity<>(service.getOpenTables(),HttpStatus.OK);
     }
     @GetMapping("/getorder/{tableid}")
     public ResponseEntity<List<TempTransaction>>getOrder(@PathVariable("tableid") Integer tableid){
